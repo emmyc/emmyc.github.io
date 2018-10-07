@@ -5,9 +5,14 @@
 
 body{
     font-family: 'Work Sans', sans-serif;
+    color: #1D3557;
     font-size: 15px;
     padding: 0;
     margin: 0;
+}
+
+h1{
+    color: #E63946;
 }
 
 .container{
@@ -69,18 +74,54 @@ header a:hover{
 }
 
 /* top part thingy */
-#showcase{
+#home{
     min-height: 400px;
     text-align: center;
-    color: #1D3557
 }
 
-#showcase h2{
-    margin-top: 40px;
+#home h2{
+    margin-top: 200px;
     margin-bottom: 0;
 }
 
-#showcase h1{
+#home h1{
     font-size: 55px;
     margin: 0;
+}
+
+/* about meeee */
+
+#about{
+    margin-top: 250px;
+    min-height: 500px;
+    text-align: center;
+}
+
+#about h1{
+    font-size: 35px;
+}
+
+/* work */
+
+#work{
+    text-align: center;
+}
+
+#work h1{
+    font-size: 35px;
+    
+}
+
+
+/* footer */
+
+footer{
+    padding: 20px;
+    margin-top: 250px;
+    text-align: center;
+    background-color: #E63946;
+}
+
+footer p{
+    color: #F1FAEE;
 }
