@@ -15,11 +15,17 @@ h1{
     color: #E63946;
 }
 
+.secondary-header{
+    color: #E63946;
+    font-size: 45px;
+}
+
 .container{
     margin: auto;
     width: 88%;
     overflow: hidden;
 }
+
 
 ul{
     margin: 0;
@@ -31,9 +37,16 @@ ul{
     font-weight: bolder
 }
 
+/* header */
 header{
     padding-top: 25px;
     min-height: 70px;
+}
+
+.header-container{
+    margin: auto;
+    width: 88%;
+    overflow: hidden;
 }
 
 header a{
@@ -74,6 +87,8 @@ header a:hover{
 }
 
 /* top part thingy */
+
+
 #home{
     min-height: 400px;
     text-align: center;
@@ -92,32 +107,54 @@ header a:hover{
 /* about meeee */
 
 #about{
-    margin-top: 250px;
     min-height: 500px;
     text-align: center;
-}
-
-#about h1{
-    font-size: 35px;
+    background-color: #FBFBFB;
 }
 
 /* work */
 
 #work{
     text-align: center;
-}
-
-#work h1{
-    font-size: 35px;
+    background-color: #FBFBFB;
     
 }
 
+.work-container{
+    display:flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 4em;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.work-link{
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+
+}
+
+.work-content{
+    background-color: white;
+    
+}
+
+.work-content-header{
+    text-align: center;
+    color: #1D3557;
+    font-size: 25px;
+    margin:0;
+    padding: 0;
+}
 
 /* footer */
 
 footer{
     padding: 20px;
-    margin-top: 250px;
     text-align: center;
     background-color: #E63946;
 }
