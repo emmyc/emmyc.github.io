@@ -21,6 +21,7 @@ h1{
 .secondary-header{
     color: #E63946;
     font-size: 45px;
+    float:left;
 }
 
 .container{
@@ -93,7 +94,6 @@ header a:hover{
 
 
 #home{
-    min-height: 400px;
     text-align: center;
 }
 
@@ -107,12 +107,32 @@ header a:hover{
     margin: 0;
 }
 
+.home-pic{
+    max-width: 900px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+}
+
 /* about meeee */
 
 #about{
-    min-height: 500px;
     text-align: center;
-    background-color: #FBFBFB;
+    background-color: white;
+}
+
+.about-text{
+    text-align: left;
+    display: inline-block;
+    width: 700px;
+    height: 300px;
+    line-height: 2;
+
+
+}
+
+#about h3{
+    font-size: 24px;
 }
 
 /* work */
@@ -124,13 +144,14 @@ header a:hover{
 }
 
 .work-container{
+    height: auto;
+    width: 100%;
     display:flex;
     flex-flow: row wrap;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding-bottom: 4em;
-    margin-left: 80px;
-    margin-right: 80px;
 }
 
 .work-wrapper{
@@ -186,9 +207,65 @@ header a:hover{
 footer{
     padding: 20px;
     text-align: center;
-    background-color: #E63946;
+    background-color: #FBFBFB;
+    padding-bottom: 20px;
 }
 
-footer p{
-    color: white;
+.footer-email{
+    color: #E63946;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.footer-contact{
+    padding: 15px;
+}
+
+.footer-icon-list{
+    padding: 15px;
+}
+
+.footer-email:hover{
+    text-decoration: underline;
+}
+
+.social-icon{
+    height: 32px;
+    width: 32px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all 200ms ease;
+}
+
+.social-icon:hover{
+    transform: translateY(-5px);
+
+}
+
+
+
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+
+    /* header and home*/
+
+    #name{
+      padding-bottom: 15px;
+    }
+    h1{
+        font-size: 20px;
+    }
+
+    #home{
+        padding-top: 40px;
+    }
+
+    /* about */
+
+    #about h3{
+        font-size: 16px;
+        width: 300px;
+    }
 }
