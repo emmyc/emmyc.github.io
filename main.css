@@ -15,13 +15,15 @@ body{
 }
 
 h1{
+    font-family: 'Work Sans', Helvetica, sans-serif;
     color: #E63946;
 }
 
 .secondary-header{
     color: #E63946;
-    font-size: 45px;
-    float:left;
+    font-size: 42px;
+    float:center;
+
 }
 
 .container{
@@ -38,7 +40,8 @@ ul{
 
 .highlight{
     color: #E63946;
-    font-weight: bolder
+    font-weight: bolder;
+    text-decoration: none;
 }
 
 /* header */
@@ -125,10 +128,14 @@ header a:hover{
     text-align: left;
     display: inline-block;
     width: 700px;
-    height: 300px;
-    line-height: 2;
+    padding: 30px;
+    line-height: 1.8;
 
+}
 
+.about-text a:hover{
+    color: #cccccc;
+    font-weight: bold;
 }
 
 #about h3{
@@ -140,6 +147,7 @@ header a:hover{
 #work{
     text-align: center;
     background-color: #FBFBFB;
+    padding-top: 4em;
     
 }
 
@@ -166,6 +174,10 @@ header a:hover{
     box-shadow: 5px 5px 14px rgba(0,0,0,.1);
 }
 
+.work-wrapper h2{
+    color: #E63946;
+}
+
 
 .work-link{
     padding: 20px;
@@ -180,14 +192,12 @@ header a:hover{
     display: block;
     width: 100%;
     height: auto;
+    transition: all 250ms ease;
 }
 .work-content{
-    background-color: white;
     margin: 0;
     position: relative;
-    border-radius: 4px;
     width: 100%;
-
     
 }
 
@@ -202,6 +212,13 @@ header a:hover{
     transition: color 300ms ease;
 }
 
+/* .work-image:hover{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px none;
+  } */
+
+
+
 /* footer */
 
 footer{
@@ -214,6 +231,7 @@ footer{
 .footer-email{
     color: #E63946;
     font-weight: 900;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -268,4 +286,10 @@ footer{
         font-size: 16px;
         width: 300px;
     }
+
+    .work-wrapper{
+        box-shadow: 3px 3px 10px rgba(0,0,0,.1);
+    }
+
+
 }
